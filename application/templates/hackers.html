@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% from "macros/profile_macro.html" import render_profile %}
+{% block content %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+	<link href="../static/css/full-width-pics.css" rel="stylesheet">  	
+	<link href="../static/css/profiles.css" rel="stylesheet"> 
+	<link href="../static/css/hackers.css" rel="stylesheet"> 
+		<div class="container-prac" style="padding-top:60px;">
+			<div style="text-align:center;">
+				<div class="container-instructors">
+					{% for user in users %}
+						{{ render_profile(user.user, user.age, user.university1, user.skill1) }}		
+					{% endfor %}			
+				</div>
+			</div>
+		</div>
+			￼
+{% endblock %}

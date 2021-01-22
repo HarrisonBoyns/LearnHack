@@ -1,0 +1,24 @@
+{% macro render_lesson(Lessons, Cost, Total_Cost, Curriculum, Brief_Description) %}
+
+<div style="padding-top:60px;">
+    <div class="section" style="padding-bottom: 100px;">
+    <div class="top-border left"></div>
+    <div class="top-border right"></div>
+    <h1 style="padding-top:25px;">{{Lessons}}</h1>
+    <p>{{Cost}}</p>
+    {% if Brief_Description %}
+    <p>{{ Brief_Description }}</p>
+    {% endif %}
+    {% if Total_Cost %}
+    <p>{{Total_Cost}}</p>
+    {% endif %}
+
+
+    {% if Curriculum %}
+    <a href="/home/clacker/Documents/LearnHackUpdated-master/application.py", download="application.py">Download the Curriculum</a>
+    {% endif %}
+    
+    <a href="{{ url_for('hackers') }}">Meet the ProfHackers</a>
+    </div>
+
+{% endmacro %}

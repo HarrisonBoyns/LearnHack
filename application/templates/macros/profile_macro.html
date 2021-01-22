@@ -1,0 +1,21 @@
+{% macro render_profile(user_name, age, University, FunFact) %}
+  <link href="../static/css/user.css" rel="stylesheet" type="text/css">
+        <div class="grid-item col-sm-4" class="btn btn-xl btn-outline-light">
+            <div class="text-container">
+                <a href="{{ url_for('user', user=user_name ) }}">
+                    <div class="text-container">
+                    <img src="../static/img/{{ user_name }}1.jpeg" alt="Andy Kobelinski" class="img-reponsive">
+                    </div>
+                    <div class="text-container">
+                        <h3 class="text_h" style="padding-top: 15px;">{{ user_name }}</h3>
+                        <div class="text-container">
+                            <p class="text_smaller">Age: {{ age }} </p>
+                            <p class="text_smaller">University: {{ University }}</p>
+                            <p class="text_smaller">Favourite language: {{ FunFact }}</p>
+
+                        </div>
+                    </div>
+                </a>
+            </div>    
+        </div>
+{% endmacro %}

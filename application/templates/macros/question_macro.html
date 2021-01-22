@@ -1,0 +1,19 @@
+{% macro render_QandA(Question, Answer, number) %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../static/css/questionMacro.css" rel="stylesheet" type="text/css">
+
+        <div>
+            <div class="hitMe">    
+            <a href="#" class="card-body" data-toggle="collapse" style="color: black; text-decoration: none; padding: 0.5rem;" data-target="#collapseThree{{ number }}" aria-expanded="false" aria-controls="collapseThree2">
+            <div class="card-body" style="padding: 0.5rem;"> {{ number }}. {{ Question }}&emsp;&emsp;<i class="arrow down"></i></div>
+            </a>
+            </div> 
+            <div id="collapseThree{{ number }}" class="collapse" aria-labelledby="headingThree2"
+            data-parent="#accordionExample275">
+                <div class="card-body">
+                        {{ Answer }}
+                </div>
+            </div>
+        </div>
+
+{% endmacro %}

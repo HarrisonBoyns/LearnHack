@@ -1,0 +1,44 @@
+a {
+    color: white;
+    }
+
+    a:hover,
+    a:active,
+    a:focus {
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+.errors{
+    color: red;
+}
+
+@media only screen and (max-width: 1026px) {
+    .content .hideMe {
+        display: none;}
+}
+
+@media all and (max-width: 959px) {
+
+    .content .x700{display:block;}
+    .content .x490{display:none;}
+    .content .x290{display:none;}
+
+}
+
+@media all and (max-width: 720px) {
+
+    .content .x700{display:none;}
+    .content .x490{display:block;}
+    .content .x290{display:none;}
+
+}
+
+@media all and (max-width: 479px) {
+
+    .content .x700{display:none;}
+    .content .x490{display:none;}
+    .content .x290{display:block;}
+
+}

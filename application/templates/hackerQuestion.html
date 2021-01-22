@@ -1,0 +1,30 @@
+{% from "macros/question_macro.html" import render_QandA %}
+
+{% extends 'base.html' %}
+{% block content %}
+	<link href="../static/css/hackers.css" rel="stylesheet"> 
+
+	<div class="container contact-form">
+
+	<h1 style="text-align: center;  padding-top: 80px; padding-bottom: 15px;">ProfHacker FAQs</h1>
+
+	{{ render_QandA("Do you offer tutoring in other subjects?", "No - We are completely committed to educating the younger generation in what we believe is the future, coding. An army of young coders, what’s not to love?", "1 ") }}
+	{{ render_QandA("How do I become a ProfHacker?", "Due to the nature of the business, and the fact that we pride ourselves on the quality of our ProfHackers, we conduct our interviews online via Skype. If successful, we will be in touch as soon as possible. Please email learnhacktutoring@gmail.com to find out more.", "2 ") }}
+    {{ render_QandA("What can I expect in the interview?", "Don’t be scared! The interview will be both casual and formal and we will do our best to make it more like a conversation. After all, we want you to work with us too! ", "3 ") }}
+    {{ render_QandA("How does it all work? ", "To become a tutor with us, please register as a solo-trader with the HMRC (this sounds scary, but we promise it isn’t – here’s the link https://www.gov.uk/set-up-sole-trader), it doesn’t take long! We will then take a photo and upload it onto our website. This will be coupled with a 30 second YouTube clip for our clients to view – almost like an advertisement! Then we’re off!", "4 ") }}
+	{{ render_QandA("Do I need to be at university to be a LearnHack tutor?", "No. Although LearnHack ProfHackers tend to be currently undertaking a degree, we have some that have graduated.", "5 ") }}
+    {{ render_QandA("Do I need teaching experience in order to apply?", "No. At LearnHack tutoring, we believe the best ProfHackers are often fresh and engaging and therefore teaching experience is not required to become one of our tutors. With that said, those with teaching experience are still welcome!", "6 ") }}
+    {{ render_QandA("Does it matter that English is not my first language? ", "As LearnHack tutoring are based in the UK, all of our ProfHackers must have excellent spoken English. However, we do have international clients and therefore second languages are an excellent skill in this market.", "7 ") }}
+	{{ render_QandA("Where do lessons take place?", "Online via Skype. Our focus is on learning to code, in your own home and in your own time. What is better than tutoring from the comfort of your own home?", "8 ") }}
+    {{ render_QandA("I'm not able to tutor right now. Should I still get in touch?", "Yes. There is no minimum or maximum amount of tuition that we require from any tutor.", "9 ") }}
+    {{ render_QandA("How much work can I expect to get?", "Good question – as we are just starting, this could range from a few hours a week to much, much more!", "10 ") }}
+	{{ render_QandA("How many lessons does a typical student want?", "1 hour each week is the typical request. However, there are often students who would like an intense course for a week, such as our flagship Introduction to Coding course. Of course, as all students are different, nothing is set in stone!", "11 ") }}
+    {{ render_QandA("What method of teaching do your ProfHackers use?", "None. We hire specifically from the best Russell group universities, where each tutor is personally interviewed by either Harrison, Charlie, or sometimes both (if you’re unlucky). During the interview process, we seek the most engaging and fun ProfHackers.", "12 ") }}
+	{{ render_QandA("What support is available to ProfHackers?", "We are always here to help with any queries that you may have. Once you have successfully become a tutor, we will pass on our contact details!", "13 ") }}
+    {{ render_QandA("Do I need to buy course materials?", "No – the lesson structure will be agreed and discussed between you (the tutor) and the student. Of course, we can give some pointers! We do expect our ProfHackers to be fully prepared to help create an engaging, fun and informative lesson. Prior planning goes far!", "14 ") }}
+    {{ render_QandA("When do the ProfHackers get paid? ", "Monthly. Having both been students, we recognise that undergraduates are on a tight budget and need regular payments to help cope with student life. Your invoices should be submitted to us on a monthly basis. We will then pay such invoices once the client has paid, usually within 14 days.", "15 ") }}
+	{{ render_QandA("How much will I make?", "The rate for ProfHackers varies depending on the job and the experience of the tutor. We will always notify you of the rate proposed for any assignment, to give you the opportunity to accept the role or not.", "16 ") }}
+	{{ render_QandA("How will I be paid?", "Direct bank transfer – as simple as that! For international ProfHackers, we provide payment via PayPal. ", "17 ") }}
+	</div>
+
+{% endblock content %}

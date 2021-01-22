@@ -1,0 +1,36 @@
+{% from "macros/question_macro.html" import render_QandA %}
+
+{% extends 'base.html' %}
+{% block content %}
+<link href="../static/css/studentQuestions.css" rel="stylesheet" type="text/css">
+
+<div class="container contact-form">
+	<h1 style="text-align: center;  padding-top: 80px; padding-bottom: 15px;">LearnHacker FAQs</h1>
+    {{ render_QandA("How do I find a ProfHacker?", "Simple. Click on ‘ProfHackers’ on the home page. From here, choose the teacher, let us know a time and get coding!", "1") }}
+    {{ render_QandA("How does payment work?", "Direct bank transfer – as simple as that! We will email across the relevant account details. For international students, we ask for payment via PayPal.", "2") }}
+    {{ render_QandA("Are your ProfHackers DBS checked?", "No. As our ProfHackers tend to be students and are self-employed, not all will be DBS checked. However, some of our registered ProfHackers do possess DBS checks.", "3") }}
+    {{ render_QandA("Am I tied into a contract?", "Absolutely not! You are free to cancel the lesson at any time, provided it is within 48 hours of the lesson.", "4") }}
+    {{ render_QandA("Do you offer tutoring in other subjects?", "No - We are completely committed to educating the younger generation in what we believe is the future, coding. An army of young coders, what’s not to love?", "5") }}
+    {{ render_QandA("Do you run coding bootcamps?", "Not at the moment. Coronavirus has put these plans on hold. However, we look forward to moving forward with this so please email us to register an interest.", "6") }}
+    {{ render_QandA("How many lessons can I do a week?", "There is no limit! Get coding!", "7") }}
+    {{ render_QandA("How often do I need to pay?", "Every two weeks. We like to pay all our ProfHackers as soon as possible.", "8") }}
+    {{ render_QandA("Is there a lesson plan?", "There are checkpoints we expect our ProfHackers to follow, otherwise lessons are tailored to their student's needs!", "9") }}
+    {{ render_QandA("What if I don't like my tutor?", "This isn’t a problem at all and isn’t something to feel nervous about. Sometimes it just doesn’t work out! Get in touch with us and we will sort it all out.", "10") }}
+    {{ render_QandA("Do I get a certificate at the end?", "We don’t work towards a specific qualification. However, if you want to work towards a qualification, or even prepare for an exam, be sure to discuss this with your ProfHacker! ", "11") }}
+    {{ render_QandA("How much coding will I do?", "This will depend on all sorts of factors, such as the lesson topic or your current capability! Be prepared to type though!", "12") }}
+    {{ render_QandA("Will there be help in setting up my coding environment?", "Our ProfHackers will walk you through the setup process and will be there to help you at every stage of the process.", "13") }}
+    {{ render_QandA("What langauges can I learn?", "We recommend Python for all beginners, however if there is something in particular you would like to learn about - just ask!", "14") }}
+    {{ render_QandA("Do I need a background in coding?", "No - we welcome all levels and all capabilities.", "15") }}
+    {{ render_QandA("Is there a curriculum?", "No - tutors will decide on the lesson content.", "16") }}
+    {{ render_QandA("What happens if I miss a lesson?", " We recognise this is an important question, so please make sure to agree a cancellation policy with your ProfHacker in advance! We recommend the below to our ProfHacker: 
+• Cancelling within 24 hours of the lesson – obliged to pay the fee in full ☹ 
+• Student cancels within 48 hours of the lesson – obliged to pay half the fee ☹ 
+Of course, if there is a reasonable excuse, no fee is to be paid.
+", "17") }}
+    {{ render_QandA("Can I share my lesson with someone?", "Yes, however the price will increase. We recommend 1 on 1 tutoring for beginners.", "18") }}
+    {{ render_QandA("Can I learn about other computer science related topics?", "Yes you can! Just speak to us and we will do our best to match you with the correct ProfHacker.", "19") }}
+    {{ render_QandA("Is there an age limit?", "No – all ages are welcome. It's never too late to get involved.", "20") }}
+</div>
+
+
+{% endblock content %}

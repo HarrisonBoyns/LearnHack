@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "base.html" %}
+
+{% block content %}
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Hacker - {{ user }}</title>
+
+  <!-- Custom fonts for this theme -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="../static/css/user.css" rel="stylesheet" type="text/css">
+
+  <!-- Theme CSS -->
+
+</head>
+
+  <!-- Masthead -->
+    <section id="about">
+      <div class="container">
+        <div class="row about-container">
+          <div class="col-lg-6 order-lg-2 order-1 wow fadeInRight">
+                <img src="../static/img/{{ user }}1.jpeg" alt="Andy Kobelinski" class="img-reponsive">
+          </div>
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+          
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.6s">             
+              <div class="cta-btn-container text-center">
+                  <a href="{{ url_for('contact') }}" class="btnUser">Book {{user}}</a>
+              </div>
+            </div>
+            
+            <p>{{ bio }}</p>
+
+            <div class="icon-box wow fadeInUp">
+              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+                <h4 class="title"><a href="">University</a></h4>
+              <li class="description">{{ university1 }}</li>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon">
+                <i class="fa fa-photo"></i>
+              </div>
+              <h4 class="title">
+                <a href="">Top 3 Programming Skills</a>
+              </h4>
+              <li class="description">{{ skill1 }}</li>
+              <li class="description">{{ skills2 }}</li>
+              <li class="description">{{ skills3 }}</li>
+            </div>
+
+            <div class="icon-box wow fadeInDown" data-wow-delay="0.4s">
+              <div class="icon">
+                <i class="fa fa-bar-chart"></i>
+              </div>
+              <h4 class="title">
+                <a href="">Interests</a>
+              </h4>
+              <p class="description">{{ interests }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+{% endblock %}
+
+
+ 
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="../static/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="../static/js/jqBootstrapValidation.js"></script>
+  <script src="../static/js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="../static/js/freelancer.min.js"></script>
+
+</body>
+
+</html>

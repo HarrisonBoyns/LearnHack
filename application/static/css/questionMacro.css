@@ -1,0 +1,59 @@
+card-body {
+    color: white;
+    display: inline-block; /* shrink to fit */
+    width: 100%;           /* whatever width you like */
+    position: relative; 
+    }
+    card-body:hover{
+    background: blue; /* make this whatever you want */
+    }
+    card-body:active,
+    card-body:focus {
+    outline: none;
+    text-decoration: none;
+    }
+    btn{
+    color: white;
+    display: inline-block; /* shrink to fit */
+    width: 100%;           /* whatever width you like */
+    position: relative; 
+    }
+
+    .hitMe:hover{
+    background: #c9c8c7; /* make this whatever you want */
+    }
+    .hitMe:active,
+    .hitMe:focus {
+    color: white;
+    outline: none;
+    text-decoration: none;
+    }
+
+    i {
+      display: inline-block;
+
+      }
+      
+      .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+      
+      .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+      
+      .up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+      }
+      
+      .down {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
