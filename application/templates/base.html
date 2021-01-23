@@ -1,114 +1,113 @@
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="description" content="LearnHack Tutoring offers remote one to one tuition in coding, programming and computer science. Get to know our teachers and Profhackers.">
-    <link rel="shortcut icon" type="image/ico" href="../static/img/favicon.ico">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="LearnHack Tutoring offers remote one to one tuition in coding, programming and computer science. Get to know our teachers and Profhackers.">
+  <link rel="shortcut icon" type="image/ico" href="../static/img/favicon.ico">
 
+
+  <title>LearnHack Tutoring </title>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <link href="../static/lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../static/css/styleBoot.css" rel="stylesheet">
   
-    <title>LearnHack Tutoring </title>
+    <!-- Custom styles for this template -->
+  <link href="../static/css/full-width-pics.css" rel="stylesheet"> 
+
+  <link href="../static/css/Normalise.css" rel="stylesheet"> 
+
+</head>
+
+<body style="background-color: white; font-family: PT Sans;">
+
+  <header id="header">
   
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
-
-    <!-- Bootstrap CSS File -->
-    <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Libraries CSS Files -->
-    <link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-    <link href="../static/lib/animate/animate.min.css" rel="stylesheet">
-
-    <!-- Main Stylesheet File -->
-    <link href="../static/css/styleBoot.css" rel="stylesheet">
-    
-      <!-- Custom styles for this template -->
-    <link href="../static/css/full-width-pics.css" rel="stylesheet"> 
-
-    <link href="../static/css/Normalise.css" rel="stylesheet"> 
-
-  </head>
-  
-  <body style="background-color: white; font-family: PT Sans;">
-  
-    <header id="header">
-    
-      <div class="container">
-            <nav id="nav-menu-container-logo" style="text-decoration: none;">
-          <ul class="nav-menu">
-              <li><a href="{{ url_for('homeHype') }}" style="font-size: 20px;"><b>LearnHack</b></a></li>
-            </ul>
-        </nav><!-- #nav-menu-container -->
-      <div>
-        <nav id="nav-menu-container" style="text-decoration: none;">
-          <ul class="nav-menu">
-            <li><a href="{{ url_for('hackers') }}" style="font-size: 15px;"><b>ProfHackers</b></a></li>
-            <li><a href="{{ url_for('cost') }}" style="font-size: 15px;"><b>Costs</b></a></li>
-
-            <li><a href="{{ url_for('about') }}" style="font-size: 15px;"><b>About Us</b></a></li>
-            <li><a href="{{ url_for('questions') }}" style="font-size: 15px;"><b>FAQs</b></a></li>
-            <li><a href="{{ url_for('career') }}" style="font-size: 15px;"><b>Careers</b></a></li>
-            <li><a href="{{ url_for('contact') }}" style="font-size: 15px;"><b>Contact Us</b></a></li>
+    <div class="container">
+          <nav id="nav-menu-container-logo" style="text-decoration: none;">
+        <ul class="nav-menu">
+            <li><a href="{{ url_for('homeHype') }}" style="font-size: 20px;"><b>LearnHack</b></a></li>
           </ul>
-        </nav><!-- #nav-menu-container -->
-      </div>
-      </div>
-    </header><!-- #header -->
-    
-    {% with messages = get_flashed_messages(with_categories=true) %}
-      {% if messages %}
-        <ul class=flashes>
-        {% for category, message in messages %}
-          <li class="{{ category }}">{{ message }}</li>
-        {% endfor %}
+      </nav><!-- #nav-menu-container -->
+    <div>
+      <nav id="nav-menu-container" style="text-decoration: none;">
+        <ul class="nav-menu">
+          <li><a href="{{ url_for('hackers') }}" style="font-size: 15px;"><b>ProfHackers</b></a></li>
+          <li><a href="{{ url_for('cost') }}" style="font-size: 15px;"><b>Costs</b></a></li>
+          <li><a href="{{ url_for('about') }}" style="font-size: 15px;"><b>About Us</b></a></li>
+          <li><a href="{{ url_for('questions') }}" style="font-size: 15px;"><b>FAQs</b></a></li>
+          <li><a href="{{ url_for('career') }}" style="font-size: 15px;"><b>Careers</b></a></li>
+          <li><a href="{{ url_for('contact') }}" style="font-size: 15px;"><b>Contact Us</b></a></li>
         </ul>
-      {% endif %}
-    {% endwith %}
+      </nav><!-- #nav-menu-container -->
+    </div>
+    </div>
+  </header><!-- #header -->
+  
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <ul class=flashes>
+      {% for category, message in messages %}
+        <li class="{{ category }}">{{ message }}</li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
 
-    {% block content %}
-    {% endblock %}
+  {% block content %}
+  {% endblock %}
 
 
-      <!-- Footer -->
-      <footer class="py-5 bg-dark">
-        <div class="container">
-          <p class="m-0 text-center text-white">LearnHack &copy; 2020</p>
-                  
-          <div class="social d-flex justify-content-center">
-            <a href="https://www.instagram.com/learnhack_tutoring/?hl=en" class="mx-2">
-              <i class="fa fa-instagram"></i>
-            </a>
-           <a href="https://www.facebook.com/LearnHackTutoring/" class="mx-2">
-              <i class="fa fa-facebook"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/learnhack" class="mx-2">
-              <i class="fa">&#xf08c;</i>
-            </a>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">LearnHack &copy; 2020</p>
+                
+        <div class="social d-flex justify-content-center">
+          <a href="https://www.instagram.com/learnhack_tutoring/?hl=en" class="mx-2">
+            <i class="fa fa-instagram"></i>
+          </a>
+         <a href="https://www.facebook.com/LearnHackTutoring/" class="mx-2">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/learnhack" class="mx-2">
+            <i class="fa">&#xf08c;</i>
+          </a>
 
-        </div>
-        <!-- /.container -->
-      </footer>
+      </div>
+      <!-- /.container -->
+    </footer>
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="../static/vendor/jquery/jquery.min.js"></script>
-  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- JavaScript Libraries -->
-  <script src="../static/lib/jquery/jquery.min.js"></script>
-  <script src="../static/lib/jquery/jquery-migrate.min.js"></script>
-  <script src="../static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../static/lib/easing/easing.min.js"></script>
-  <script src="../static/lib/wow/wow.min.js"></script>
-  <script src="../static/lib/waypoints/waypoints.min.js"></script>
-  <script src="../static/lib/counterup/counterup.min.js"></script>
-  <script src="../static/lib/superfish/hoverIntent.js"></script>
-  <script src="../static/lib/superfish/superfish.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="../static/vendor/jquery/jquery.min.js"></script>
+<script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript Libraries -->
+<script src="../static/lib/jquery/jquery.min.js"></script>
+<script src="../static/lib/jquery/jquery-migrate.min.js"></script>
+<script src="../static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../static/lib/easing/easing.min.js"></script>
+<script src="../static/lib/wow/wow.min.js"></script>
+<script src="../static/lib/waypoints/waypoints.min.js"></script>
+<script src="../static/lib/counterup/counterup.min.js"></script>
+<script src="../static/lib/superfish/hoverIntent.js"></script>
+<script src="../static/lib/superfish/superfish.min.js"></script>
 
-  <!-- Template Main Javascript File -->
-  <script src="../static/js/mainBoot.js"></script>
+<!-- Template Main Javascript File -->
+<script src="../static/js/mainBoot.js"></script>
 
 </body>
 
