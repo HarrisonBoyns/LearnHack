@@ -24,8 +24,8 @@ def contact():
         text_body = request.form["msg"]
 
         msg = Message(subject="Lesson", sender="LearnHackTutoring@gmail.com", recipients=["LearnHackTutoring@gmail.com"])
-        msg.body = text_body + phone + email + name
-
+        msg.body = text_body + " "+ phone + " " + email + " " + name
+ 
         send_async_email(application, msg)
 
         flash("The email was recieved! We will respond ASAP!")
