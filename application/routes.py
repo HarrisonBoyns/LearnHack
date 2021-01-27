@@ -23,7 +23,7 @@ def contact():
         phone = request.form["number"]
         text_body = request.form["msg"]
 
-        msg = Message(subject="Lesson", sender="LearnHackTutoring@gmail.com", recipients=["LearnHackTutoring@gmail.com", "admin@learnhack.co.uk"])
+        msg = Message(subject="Lesson", sender="LearnHackTutoring@gmail.com", recipients=["LearnHackTutoring@gmail.com"])
         msg.body = text_body + phone + email + name
 
         send_async_email(application, msg)
