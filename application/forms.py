@@ -12,6 +12,6 @@ class EmailClass(FlaskForm):
         DataRequired(), Length(7, 12)
         ])
     msg = StringField("Message", validators=[
-        DataRequired(), Length(10, 1000)
+        DataRequired(), Length(0, 1000)
         ]) 
     submit = SubmitField("Send Email")

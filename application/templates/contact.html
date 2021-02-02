@@ -47,7 +47,8 @@
                             <div class="form-group">
                                 <input type="text" name="email" class="form-control" placeholder="Your Email *" value="" />
                                 {% if form.name.errors %}
-                                <li class="errors">  {% for errors in form.email.errors%}
+                                <li class="errors">  
+                                    {% for errors in form.email.errors%}
                                         {{ errors }}
                                     {% endfor %}
                                 </li>
@@ -56,7 +57,7 @@
                             <div class="form-group">
                                 <input type="text" name="number" class="form-control" placeholder="Your Number *" value="" />
                                 {% if form.number.errors %}
-                                <li class="errors"> {% for errors in form.name.errors%}
+                                <li class="errors"> {% for errors in form.number.errors%}
                                         {{ errors }}
                                     {% endfor %}
                                 </li>
@@ -70,7 +71,7 @@
                             <div class="form-group">
                                 <textarea name="msg" class="form-control" placeholder="Your Message *" style="width: 100%; height:145px;"></textarea>
                                 {% if form.msg.errors %}
-                                <li class="errors"> {% for errors in form.name.errors%}
+                                <li class="errors"> {% for errors in form.msg.errors%}
                                         {{ errors }}
                                     {% endfor %}
                                 </li>
