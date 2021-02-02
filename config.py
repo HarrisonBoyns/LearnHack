@@ -8,7 +8,7 @@ class Config(object):
     ENV = 'production'
     MAIL_USE_SSL = True
     MAIL_USE_TLS = False
-    MAIL_PASSWORD = 'LearnHack14!'
+    MAIL_PASSWORD = os.environ.get("SECRET")
     SECRET_KEY = 'SECRET_KEY'
     MAIL_SERVER = 'smtp.gmail.com'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
