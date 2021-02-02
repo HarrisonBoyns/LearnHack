@@ -25,7 +25,7 @@ def contact():
 
         msg = Message(subject="Lesson", sender="LearnHackTutoring@gmail.com", recipients=["LearnHackTutoring@gmail.com", "admin@learnhack.co.uk"])
         msg.body = text_body + phone + email + name
-        msg.body = text_body + "You have received a new mail from {}.\n\n{}\n\n<{}>".format(name, phone, email)
+        msg.body = text_body + "\n\n\nYou have received a new mail from {}.\n\n{}\n\n<{}>".format(name, phone, email)
 
         send_async_email(application, msg)
 
