@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.learnhack.co.uk/</loc>
+  <lastmod>2021-03-31T13:00:54+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.learnhack.co.uk/home</loc>
+  <lastmod>2021-03-31T13:00:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.learnhack.co.uk/hackers</loc>
+  <lastmod>2021-03-31T13:00:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.learnhack.co.uk/costs</loc>
+  <lastmod>2021-03-31T13:00:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.learnhack.co.uk/about</loc>
+  <lastmod>2021-03-31T13:00:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.learnhack.co.uk/faq</loc>
+  <lastmod>2021-03-31T13:00:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.learnhack.co.uk/career</loc>
+  <lastmod>2021-03-31T13:00:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.learnhack.co.uk/contact</loc>
+  <lastmod>2021-03-31T13:00:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.learnhack.co.uk/hackers/Sam</loc>
+  <lastmod>2021-03-31T13:00:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.learnhack.co.uk/hackers/Michael</loc>
+  <lastmod>2021-03-31T13:00:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.learnhack.co.uk/hackers/Malina</loc>
+  <lastmod>2021-03-31T13:00:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.learnhack.co.uk/hackers/Harrison</loc>
+  <lastmod>2021-03-31T13:00:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.learnhack.co.uk/static/downloads/I2C_Curriculum.pdf</loc>
+  <lastmod>2021-02-15T09:10:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.learnhack.co.uk/static/downloads/I2C_Exam.pdf</loc>
+  <lastmod>2021-02-15T09:10:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.learnhack.co.uk/hackerfaq</loc>
+  <lastmod>2021-03-31T13:00:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
