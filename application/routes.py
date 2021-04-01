@@ -93,3 +93,7 @@ def fileNotFound(e):
 def serverError(e):
     
     return (render_template("505.html"), 505)
+
+@application.route('/sitemap.xml')
+def site_map():
+  return render_template('sitemap.xml')
