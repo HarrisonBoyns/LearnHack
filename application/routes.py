@@ -1,5 +1,5 @@
 from application import application, mail
-from flask import render_template, url_for, request,redirect, flash
+from flask import render_template, url_for, request,redirect, flash, send_from_directory
 from flask_mail import Message
 from application.forms import EmailClass
 from application.decorators import asynchronous
@@ -67,16 +67,8 @@ def hackers():
     return render_template("hackers.html", users=users) 
 
 @application.route("/", methods=["GET"])
-@application.route("/home", methods=["GET"])
 def homeHype():
-
     return render_template("index.html") 
-
-@application.route("/", methods=["GET"])
-@application.route("/admin", methods=["GET"])
-def admin():
-
-    return render_template("admin.html") 
 
 @application.route("/costs", methods=["GET"])
 def cost():
@@ -96,4 +88,4 @@ def serverError(e):
 
 @application.route('/sitemap.xml')
 def site_map():
-  return render_template('sitemap.xml')
+  return send_from_directory(application.template_folder, request.path[1:])
